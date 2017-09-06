@@ -18,17 +18,17 @@ module.exports = {
         ]
     },
     output: {
-        path: './static/build/public',
+        path: path.join(__dirname, '/static/build/public'),
         publicPath: 'http://localhost:2992/assets/',
         filename: '[name].js',
         chunkFilename: '[id].js'
     },
     resolve: {
-        extensions: ['', '.js', '.css', 'py']
+        extensions: ['.js', '.css', 'py']
     },
     resolveLoader: {
         alias: {
-        'python-loader': path.join(__dirname, './loader/python-loader'),
+        'python-loader': path.join(__dirname, '/loader/python-loader'),
         },
         modules: ['node_modules', path.resolve(__dirname, 'loader')]
     },
@@ -52,7 +52,7 @@ module.exports = {
             },
             {
                 test: /\.py$/,
-                loader: 'python-loader'
+                use: ['python-loader']
 //                loader: require.resolve('./loader/python-loader'),
             }
         ]

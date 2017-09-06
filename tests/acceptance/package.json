@@ -5,13 +5,14 @@
     "watch": "node_modules/.bin/webpack --progress --profile --colors --watch"
   },
   "dependencies": {
-    "script-loader": "^0.6.1",
-    "css-loader": "^0.14.4",
-    "style-loader": "^0.12.3",
-    "image-webpack-loader": "^1.4.0",
-    "extract-text-webpack-plugin": "^0.8.1",
-    "manifest-revision-webpack-plugin": "^0.0.5",
-    "webpack": "^1.9.10",
-    "webpack-dev-server": "^1.9.0"
+    "script-loader": "*",
+    "css-loader": "*",
+    "style-loader": "*",
+    "image-webpack-loader": "*",
+    "extract-text-webpack-plugin": "*",
+    "manifest-revision-webpack-plugin": "*",
+    "webpack": "*",
+    "webpack-dev-server": "*",
+    "node-cmd": "*"
   }
 }

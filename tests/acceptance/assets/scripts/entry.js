@@ -1,6 +1,5 @@
-//require("./assets/python/test.py");
-
-require("./loader/python-loader!./assets/python/test.py");
+import 'python' from '../python/test.py'
+require("../python/test.py");
 
 function ola() {
     console.log("jnkjn");
