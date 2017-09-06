@@ -1,0 +1,7 @@
+Flask
+Flask-PyMongo
+marshmallow
+livereload
+pytest
+requests
+Flask-Webpack
