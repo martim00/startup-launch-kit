@@ -2,6 +2,8 @@ var path = require('path');
 
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var ManifestRevisionPlugin = require('manifest-revision-webpack-plugin');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 
 var rootAssetPath = './assets';
 
@@ -56,12 +58,17 @@ module.exports = {
 //                loader: require.resolve('./loader/python-loader'),
             }
         ]
-    }
-//    plugins: [
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+          filename: 'index.html',
+          template: 'index.html',
+          inject: true
+        }),
 //        new ExtractTextPlugin('[name].[chunkhash].css'),
 //        new ManifestRevisionPlugin(path.join('static', 'build', 'manifest.json'), {
 //            rootAssetPath: rootAssetPath,
 //            ignorePaths: ['/styles', '/scripts']
 //        })
-//    ]
+    ]
 };

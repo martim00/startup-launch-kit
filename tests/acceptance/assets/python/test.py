@@ -9,7 +9,7 @@ class Vue:
         self.proto = proto
 
 app = Vue({
-    'el': '#app',
+    'el': '#a222',
     'data': {
         'message': 'Hello Vue'
     }

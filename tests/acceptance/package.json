@@ -13,6 +13,7 @@
     "manifest-revision-webpack-plugin": "*",
     "webpack": "*",
     "webpack-dev-server": "*",
-    "node-cmd": "*"
+    "node-cmd": "*",
+    "html-webpack-plugin": "*"
   }
 }
